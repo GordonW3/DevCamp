@@ -10,7 +10,6 @@ class BlogsController < ApplicationController
   end
 
   # GET /blogs/1
-  # GET /blogs/1.json
   def show
     @page_title = @blog.title
     @seo_keywords = @blog.body
@@ -26,7 +25,6 @@ class BlogsController < ApplicationController
   end
 
   # POST /blogs
-  # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
 
