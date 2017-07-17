@@ -8,6 +8,9 @@ class Portfolio < ApplicationRecord
 
 	after_initialize :set_defualts
 
+	def self.by_position
+		order("position ASC")
+	end
 
 	def set_defualts
 		self.main_image ||= Placeholder.image_generator(height: '600', width: '400')
