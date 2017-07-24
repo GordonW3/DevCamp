@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "gritter";
 
 /*
  * Globals
@@ -91,7 +92,7 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
+  color: #black;
   border-bottom-color: #fff;
 }
 
