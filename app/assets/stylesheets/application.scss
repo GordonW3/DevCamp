@@ -77,8 +77,8 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
-  background-color: transparent;
+  color: rgba(255,255,255,.8);
+  /*background-color: transparent;*/
   border-bottom: .25rem solid transparent;
 }
 
@@ -204,7 +204,6 @@ body {
   width: 100%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("giphy.mp4") no-repeat;
   background-size: cover;
  
 }
@@ -221,22 +220,39 @@ body {
 
 .tech-news > .card {
   padding: 30px;
-
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .home-about-content {
+  width: 100%;
   background-color: rgba(122, 122, 122, 0.3);
 }
 
 #home-words {
-  font-size: 60px;
+  font-size: 50px;
   color: white;
 }
 
-.inner {
-  width: 100%;
-  background-color: rgba(194, 194, 194, 0.3);
+.contact-page-content p {
+  font-size: 50px;
 }
+
+.contact-page-content h1 {
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+
+.home-about-content {
+  font-size: 40px;
+}
+
+.home-about-content h1{
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+
 
 
 
