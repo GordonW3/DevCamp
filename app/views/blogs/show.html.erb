@@ -6,8 +6,8 @@
 		<%= @blog.topic.title %>
 	</p>
 
-	<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
-	<%= link_to 'Delete', @blog, method: :delete, data: { confirm: 'Are you sure you want to delete this?'} if logged_in?(:site_admin) %> 
+	<%= render 'blogs/edit_blogs_sub_nav' %>
+	
 	<p>
 		<%= markdown @blog.body %>
 	</p>
