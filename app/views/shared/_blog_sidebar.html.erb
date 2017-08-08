@@ -4,6 +4,14 @@
     <p>Here are a few post I have written about programing.</p>
   </div>
 
+  
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |top| %>
+      <p><%= link_to top.title, topic_path(top) %></p>
+    <% end %>
+  </div>
+
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled social-links">
