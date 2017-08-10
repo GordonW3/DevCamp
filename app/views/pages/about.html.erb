@@ -1,17 +1,15 @@
-<h1>About Me</h1>
-
 <div class="row">
-	<div class="col-lg-4">
+	<div class="col-lg-5">
 
-	<%= image_tag "personal_photo.jpg", id: "background", alt: "Its me! Gordon!" %>
 	</div>
 	
-	<div class="col-lg-8">
-		<p>Hello, My name is Gordon Wallace and I want to be the very best that no one ever was!  </p>
+	<div class="col-lg-7 home-about-background">
+		<h1>About Me</h1>
+		<p>Hello, My name is Gordon Wallace and I want to be the very best like no one ever was!</p>
 
-		<p>Some of my hobbies of mine</p>
+		<p>Some of my hobbies of mine:</p>
 
-		<ul>
+		<ul style="list-style: none;">
 			<li>Soccer</li>
 			<li>Ultimate Frisbee</li>
 			<li>Video Games</li>
@@ -21,6 +19,50 @@
 		</ul>
 		<p>Random fact:</p>
 		<p>don't pick up a duck of doom</p>
+	
+		<p>
+			<button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#jobHistory"
+        aria-expanded="false"
+        aria-controler="jobHistory"
+      >
+      	Jobs
+      </button>
 		
+		
+			<button
+        class="btn btn-primary"
+        type="button"
+        data-toggle="collapse"
+        data-target="#education"
+        aria-expanded="false"
+        aria-controler="education"
+      >
+      	Education
+      </button>
+		</p>
+
+		 <div class="collapse" id="jobHistory">
+      <div class="card card-block">
+        Kuma-Ko Intern July,2017 - present 
+      </div>
+      <div class="card card-block">
+        Intercap Lending, Loan Officers assistant January,2017 - May,2017
+      </div>
+    </div>
+
+		 <div class="collapse" id="education">
+      <div class="card card-block">
+        Bottega Tech
+      </div>
+      <div class="card card-block">
+        Lone Peak High school
+      </div>
+    </div>
+
 	</div>
 </div>
+	<%= image_tag "personal_photo.jpg", id: "background", alt: "Its me! Gordon!" %>

@@ -1,3 +1,22 @@
+User.create!(
+	email: "test@test.com",
+	password: "123456",
+	password_confirmation: "123456",
+	name: 'GORDOOOO user',
+	roles: 'site_admin'
+	)
+
+puts 'Admin created'
+
+User.create!(
+	email: "testy@test.com",
+	password: "123456",
+	password_confirmation: "123456",
+	name: 'guest user',
+	)
+
+puts 'user created'
+
 3.times do |topic|
 	Topic.create!(
 		title: "topic #{topic}"
@@ -8,6 +27,7 @@ puts "3 tipoc creation"
 
 10.times do |blog|
 	Blog.create!(
+		topic_id: Topic.last.id,
 		title: "taco nacho amego #{blog}",
 		body: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untraveled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided."
 	)

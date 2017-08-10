@@ -2,10 +2,14 @@
 
 	<h2><%= @blog.title %></h2>
 
-	<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
+	<p> 
+		<%= @blog.topic.title %>
+	</p>
 
+	<%= render 'blogs/edit_blogs_sub_nav' %>
+	
 	<p>
-		<%= @blog.body %>
+		<%= markdown @blog.body %>
 	</p>
 
 	<%= render 'comments/comment_form' %>
