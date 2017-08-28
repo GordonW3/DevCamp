@@ -50,11 +50,32 @@ h6, .h6 {
 }
 
 /* Nav links */
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-brand {
+  color: #323233;
+  padding-right: 50px;
+}
+
+.navbar-brand:hover {
+  color: #323233;
+}
+
 .nav-link {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #cdddeb;
+  color: #dadff2;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -195,3 +216,6 @@ h6, .h6 {
   margin-top: 20px;
 }
 
+.blog-nav {
+  margin-bottom: 30px;
+}
