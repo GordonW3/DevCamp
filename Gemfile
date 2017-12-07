@@ -20,6 +20,13 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+
+end
+
+group :text do
+	gem 'capybara', '~> 2.16', '>= 2.16.1'
+	gem 'capybara-selenium', '~> 0.0.6'
 end
 
 group :development do
@@ -47,5 +54,7 @@ gem 'twitter', '~> 6.1'
 gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'redcarpet','~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
+gem 'selenium-webdriver', '~> 3.8'
+gem 'chromedriver-helper', '~> 1.1'
 
 ruby "2.4.0"
